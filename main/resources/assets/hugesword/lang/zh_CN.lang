@@ -1,0 +1,30 @@
+VersionChecker.perfix=[HugeSword] 发现新版本!点击下载.
+VersionChecker.version=[HugeSword] 最新版本: !new ,当前版本: !old .
+item.huge.perfix=巨大的
+itemGroup.hugeItem=巨大的物品
+
+item.hugeswordDiamond.name=巨大的钻石剑
+item.hugeswordIron.name=巨大的铁剑
+item.hugeswordGold.name=巨大的金剑
+item.hugeswordStone.name=巨大的石剑
+
+item.hugehatchetDiamond.name=巨大的钻石斧
+item.hugehatchetIron.name=巨大的铁斧
+item.hugehatchetGold.name=巨大的金斧
+item.hugehatchetStone.name=巨大的石斧
+
+item.hugehoeDiamond.name=巨大的钻石锄
+item.hugehoeIron.name=巨大的铁锄
+item.hugehoeGold.name=巨大的金锄
+item.hugehoeStone.name=巨大的石锄
+
+item.hugepickaxeDiamond.name=巨大的钻石镐
+item.hugepickaxeIron.name=巨大的铁镐
+item.hugepickaxeGold.name=巨大的金镐
+item.hugepickaxeStone.name=巨大的石镐
+
+
+item.hugeshovelDiamond.name=巨大的钻石铲
+item.hugeshovelIron.name=巨大的铁铲
+item.hugeshovelGold.name=巨大的金铲
+item.hugeshovelStone.name=巨大的石铲

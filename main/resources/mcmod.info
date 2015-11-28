@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hugetools",
+  "name": "Huge Tools",
+  "description": "What a Huge Sword!",
+  "version": "1.0",
+  "mcversion": "1.8",
+  "url": "http://www.mccraft.cn",
+  "updateUrl": "",
+  "authorList": ["Trychen"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

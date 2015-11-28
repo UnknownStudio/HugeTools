@@ -1,0 +1,29 @@
+VersionChecker.perfix=[HugeSword] Found New Version!Click to Download.
+VersionChecker.version=[HugeSword] Latest Version: !new ,Currect Version: !old .
+item.huge.perfix=Huge
+itemGroup.hugeItem=Huge Item
+
+item.hugeswordDiamond.name=Huge Diamond Sword
+item.hugeswordIron.name=Huge Iron Sword
+item.hugeswordGold.name=Huge Golden Sword
+item.hugeswordStone.name=Huge Stone Sword
+
+item.hugehatchetDiamond.name=Huge Diamond Hatchet
+item.hugehatchetIron.name=Huge Iron Hatchet
+item.hugehatchetGold.name=Huge Golden Hatchet
+item.hugehatchetStone.name=Huge Stone Hatchet
+
+item.hugehoeDiamond.name=Huge Diamond Hoe
+item.hugehoeIron.name=Huge Iron Hoe
+item.hugehoeGold.name=Huge Golden Hoe
+item.hugehoeStone.name=Huge Stone Hoe
+
+item.hugepickaxeDiamond.name=Huge Diamond Pickaxe
+item.hugepickaxeIron.name=Huge Iron Pickaxe
+item.hugepickaxeGold.name=Huge Golden Pickaxe
+item.hugepickaxeStone.name=Huge Stone Pickaxe
+
+item.hugeshovelDiamond.name=Huge Diamond Shovel
+item.hugeshovelIron.name=Huge Iron Shovel
+item.hugeshovelGold.name=Huge Golden Shovel
+item.hugeshovelStone.name=Huge Stone Shovel
