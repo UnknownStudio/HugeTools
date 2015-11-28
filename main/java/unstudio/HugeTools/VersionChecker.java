@@ -42,12 +42,12 @@ public class VersionChecker implements Runnable {
             IOUtils.closeQuietly(version);
         }
 
-        System.out.println("[ChinaCraft]Latest mod version = " + latestVersion);
+        System.out.println("[HugeTools]Latest mod version = " + latestVersion);
         isLatestVersion = latestVersion == HugeTools.OutPutVERSION;
         if (isLatestVersion) {
-            System.out.println("[ChinaCraft]You are running latest version = " + isLatestVersion);
+            System.out.println("[HugeTools]You are running latest version = " + isLatestVersion);
         }else {
-            System.out.println("[ChinaCraft]Found New version");
+            System.out.println("[HugeTools]Found New version");
         }
     }
 
