@@ -15,7 +15,7 @@ public class Listener {
             if (e.entity instanceof EntityPlayer) {
                 EntityPlayer p = (EntityPlayer) e.entity;
                 if (!HugeTools.haveWarnedVersionOutOfDate && p.worldObj.isRemote
-                        && !HugeTools.versionChecker.getisLatestVersion()) {
+                        && !HugeTools.versionChecker.isLatestVersion()) {
                     ClickEvent versionCheckChatClickEvent = new ClickEvent(ClickEvent.Action.OPEN_URL,
                             HugeTools.versionChecker.getDownloadUrl());
                     ChatStyle clickableChatStyle = new ChatStyle().setChatClickEvent(versionCheckChatClickEvent);
@@ -29,7 +29,7 @@ public class Listener {
                     p.addChatMessage(info);
                     System.out.println(StatCollector.translateToLocal("VersionChecker.perfix"));
                     System.out.println(StatCollector.translateToLocal("VersionChecker.version").replaceAll("!new", String.valueOf(HugeTools.versionChecker.getLatestVersion())).replaceAll("!old", String.valueOf(HugeTools.OutPutVERSION)));
-                    System.out.println("[ChinaCraft]Download Url:" + HugeTools.versionChecker.getDownloadUrl());
+                    System.out.println("[VersionChecker]Download Url:" + HugeTools.versionChecker.getDownloadUrl());
                     HugeTools.haveWarnedVersionOutOfDate = true;
                 }
             }

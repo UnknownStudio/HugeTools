@@ -13,7 +13,10 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.MinecraftForge;
-import unstudio.HugeTools.mod.NeverMine;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import unstudio.HugeTools.remote.MinecraftModVersionChecker;
+import unstudio.HugeTools.remote.VersionChecker;
 
 @Mod(modid = HugeTools.MODID, name = HugeTools.NAME, version = HugeTools.VERSION)
 public class HugeTools {
@@ -21,23 +24,20 @@ public class HugeTools {
     public static final String NAME = "HugeTools";
     public static final String VERSION = "1.1";
     public static final int OutPutVERSION = 3;
+    public static final Logger log = LogManager.getLogger(NAME);
     public static boolean haveWarnedVersionOutOfDate = false;
-    public static VersionChecker versionChecker = new VersionChecker();
+    public static VersionChecker versionChecker = new MinecraftModVersionChecker(HugeTools.class,"巨大化物品 HugeTools",6, log);
     public static Listener listener = new Listener();
     public static boolean isNeverMineLoaded;
     @SidedProxy(clientSide = "unstudio.HugeTools.ClientProxy",
             serverSide = "unstudio.HugeTools.CommonProxy")
     public static CommonProxy proxy;
-    public static NeverMine neverMine;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         isNeverMineLoaded = Loader.isModLoaded("nevermine");
-        if (isNeverMineLoaded){
-            neverMine = new NeverMine();
-        }
         proxy.preInit(event);
-        new Thread(versionChecker).start();
+
     }
 
     public static CreativeTabs tabSword = new CreativeTabs(StatCollector.translateToLocal("hugeItem")) {

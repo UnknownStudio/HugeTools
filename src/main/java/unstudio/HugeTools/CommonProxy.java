@@ -8,6 +8,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 
 public class CommonProxy {
     public void init(FMLInitializationEvent event){
+
         registerItem(HugeTools.hugeDiamondSword);
         registerItem(HugeTools.hugeIronSword);
         registerItem(HugeTools.hugeGoldenSword);
@@ -32,14 +33,6 @@ public class CommonProxy {
         registerItem(HugeTools.hugeIronShovel);
         registerItem(HugeTools.hugeGoldenShovel);
         registerItem(HugeTools.hugeStoneShovel);
-
-        if (HugeTools.isNeverMineLoaded){
-            GameRegistry.registerItem(HugeTools.neverMine.hugeBloodfury,HugeTools.neverMine.hugeBloodfury.getUnlocalizedName().substring(5));
-            HugeTools.neverMine.hugeBloodfury.addRepices();
-            GameRegistry.registerItem(HugeTools.neverMine.hugeRockBasherSword,HugeTools.neverMine.hugeRockBasherSword.getUnlocalizedName().substring(5));
-            HugeTools.neverMine.hugeRockBasherSword.addRepices();
-        }
-
 	}
 
     public void registerItem(ItemHugeSword item){

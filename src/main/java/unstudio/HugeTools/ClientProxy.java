@@ -31,10 +31,6 @@ public class ClientProxy extends CommonProxy{
         MinecraftForgeClient.registerItemRenderer(HugeTools.hugeIronShovel, hugeItemRenderer);
         MinecraftForgeClient.registerItemRenderer(HugeTools.hugeGoldenShovel, hugeItemRenderer);
         MinecraftForgeClient.registerItemRenderer(HugeTools.hugeStoneShovel, hugeItemRenderer);
-        if (HugeTools.isNeverMineLoaded){
-            MinecraftForgeClient.registerItemRenderer(HugeTools.neverMine.hugeBloodfury, hugeItemRenderer);
-            MinecraftForgeClient.registerItemRenderer(HugeTools.neverMine.hugeRockBasherSword, hugeItemRenderer);
-        }
         super.init(event);
     }
 
